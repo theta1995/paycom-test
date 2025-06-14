@@ -20,7 +20,6 @@ import java.util.concurrent.Executors;
 
 import static org.testng.Assert.*;
 
-
 public class HomePageLinksCheckerTest {
 
     WebDriver driver;
@@ -50,7 +49,6 @@ public class HomePageLinksCheckerTest {
 
     @Test
     public void verifyFooterNavLinksAreNotBroken() {
-
         driver.get(url);
         WebElement footerNav = driver.findElement(By.id("footer-nav"));
         List<WebElement> anchorElements = footerNav.findElements(By.tagName("a"));
